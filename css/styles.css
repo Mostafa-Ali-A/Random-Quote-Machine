@@ -1,0 +1,99 @@
+* {
+	font-family: "https://allfont.net/allfont.css?fonts=raleway-medium";
+}
+/* dark & light contents */
+@media (prefers-color-scheme: dark) {
+	body, #quote-box, #new-quote, #tweet-quote, #tumblr-quote {
+		background-color: black;
+	}
+	#new-quote, #tweet-quote, #tumblr-quote {
+    color: black;
+}
+}
+
+@media (prefers-color-scheme: light) {
+	#quote-box {
+		background-color: white;
+	}
+	body, #new-quote, #tweet-quote, #tumblr-quote {
+		background-color: slategray;
+	}
+	#new-quote, #tweet-quote, #tumblr-quote {
+    color: white;
+}
+}
+/* Main Contents */
+body {
+    padding-top: 150px;
+    transition: 2500ms;
+}
+#author {
+	font-family: "https://allfont.net/allfont.css?fonts=raleway-extralight";
+	text-align: right;
+	display: block;
+	transition: 2500ms;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	font-weight: 100;
+}
+#text {
+	font-size: 200%;
+	transition: 2500ms;
+	line-height: 50%
+}
+#quote-box {
+	position: relative;
+	left: 50%;
+    transform: translate(-50%);
+	border-radius: .7%;
+	width: 550px;
+	padding: 40px 40px 80px 40px;
+	text-align: center;
+
+}
+#new-quote {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	border: none;
+	outline: none;
+	border-radius: 5%;
+	padding: 10px 15px 7px 15px;
+    font-size: 90%;
+	cursor: pointer;
+	float: right;
+	transition: background-color 2500ms;
+}
+
+#quote{
+	font-size: 180%;
+	transition: 2500ms;
+}
+
+#tweet-quote,
+#tumblr-quote {
+	font-size: 18px;
+	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 12px;
+	margin-right: 3px;
+	margin-left: 3px;
+	cursor: pointer;
+	transition: background-color 2500ms;
+    text-align: center;
+    text-decoration: none;
+	border-radius: 10%;
+}
+
+#tweet-quote:hover {opacity: .7}
+#tumblr-quote:hover {opacity: .7}
+
+#pro {
+	text-align: center;
+	margin-top: 10px;
+	color: white;
+}
+#mostafa {
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+}
