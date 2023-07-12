@@ -1,34 +1,45 @@
 * {
-	font-family: "https://allfont.net/allfont.css?fonts=raleway-medium";
+	font-family: 'https://allfont.net/allfont.css?fonts=raleway-medium';
 }
 /* dark & light contents */
 @media (prefers-color-scheme: dark) {
-	body, #quote-box, #new-quote, #tweet-quote, #tumblr-quote {
+	body,
+	#quote-box,
+	#new-quote,
+	#tweet-quote,
+	#tumblr-quote {
 		background-color: black;
 	}
-	#new-quote, #tweet-quote, #tumblr-quote {
-    color: black;
-}
+	#new-quote,
+	#tweet-quote,
+	#tumblr-quote {
+		color: black;
+	}
 }
 
 @media (prefers-color-scheme: light) {
 	#quote-box {
 		background-color: white;
 	}
-	body, #new-quote, #tweet-quote, #tumblr-quote {
+	body,
+	#new-quote,
+	#tweet-quote,
+	#tumblr-quote {
 		background-color: slategray;
 	}
-	#new-quote, #tweet-quote, #tumblr-quote {
-    color: white;
-}
+	#new-quote,
+	#tweet-quote,
+	#tumblr-quote {
+		color: white;
+	}
 }
 /* Main Contents */
 body {
-    padding-top: 150px;
-    transition: 2500ms;
+	padding-top: 150px;
+	transition: 2500ms;
 }
 #author {
-	font-family: "https://allfont.net/allfont.css?fonts=raleway-extralight";
+	font-family: 'https://allfont.net/allfont.css?fonts=raleway-extralight';
 	text-align: right;
 	display: block;
 	transition: 2500ms;
@@ -39,17 +50,16 @@ body {
 #text {
 	font-size: 200%;
 	transition: 2500ms;
-	line-height: 50%
+	line-height: 50%;
 }
 #quote-box {
 	position: relative;
 	left: 50%;
-    transform: translate(-50%);
-	border-radius: .7%;
+	transform: translate(-50%);
+	border-radius: 0.7%;
 	width: 550px;
 	padding: 40px 40px 80px 40px;
 	text-align: center;
-
 }
 #new-quote {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -57,13 +67,13 @@ body {
 	outline: none;
 	border-radius: 5%;
 	padding: 10px 15px 7px 15px;
-    font-size: 90%;
+	font-size: 90%;
 	cursor: pointer;
 	float: right;
 	transition: background-color 2500ms;
 }
 
-#quote{
+#quote {
 	font-size: 180%;
 	transition: 2500ms;
 }
@@ -79,14 +89,20 @@ body {
 	margin-left: 3px;
 	cursor: pointer;
 	transition: background-color 2500ms;
-    text-align: center;
-    text-decoration: none;
+	text-align: center;
+	text-decoration: none;
 	border-radius: 10%;
 }
 
-#tweet-quote:hover {opacity: .7}
-#tumblr-quote:hover {opacity: .7}
-#new-quote:hover {opacity: .7}
+#tweet-quote:hover {
+	opacity: 0.7;
+}
+#tumblr-quote:hover {
+	opacity: 0.7;
+}
+#new-quote:hover {
+	opacity: 0.7;
+}
 
 #pro {
 	text-align: center;

@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  	<!-- Meta here -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Random Quote Machine">
-<meta author="Mostafa Ali">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Random Quote Machine</title>
-	<!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+	<head>
+		<!-- Meta here -->
+		<meta charset="utf-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="description"
+			content="Random Quote Machine" />
+		<meta
+			name="author"
+			content="Mostafa Ali" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<title>Random Quote Machine</title>
+		<!-- CSS here -->
+		<link
+			rel="stylesheet"
+			href="css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	</head>
+	<body>
+		<!-- Main Content -->
+		<div id="quote-box">
+			<i
+				id="quote"
+				class="fa fa-quote-left"
+				aria-hidden="true"></i
+			>&nbsp;&nbsp;
+			<span id="text"></span>
+			<span id="author"></span>
+			<button
+				id="new-quote"
+				onclick="location.href='#';">
+				New quote
+			</button>
+			<a
+				class="fa fa-twitter"
+				id="tweet-quote"
+				title="Tweet this quote!"
+				href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22Whatever%20the%20mind%20of%20man%20can%20conceive%20and%20believe%2C%20it%20can%20achieve.%22%20Napoleon%20Hill"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-hidden="true">
+			</a>
+			<a
+				class="fa fa-tumblr"
+				id="tumblr-quote"
+				title="Post this quote on tumbler!"
+				href="https://www.tumblr.com/login?redirect_to=https%3A%2F%2Fwww.tumblr.com%2Fwidgets%2Fshare%2Ftool%3Fposttype%3Dquote%26tags%3Dquotes%252Cfreecodecamp%26caption%3DVincent%2Bvan%2BGogh%26content%3DI%2Bwould%2Brather%2Bdie%2Bof%2Bpassion%2Bthan%2Bof%2Bboredom.%26canonicalUrl%3Dhttps%253A%252F%252Fwww.tumblr.com%252Fbuttons%26shareSource%3Dtumblr_share_button"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-hidden="true">
+			</a>
+		</div>
+		<div id="pro">
+			by
+			<a
+				id="mostafa"
+				href="https://codepen.io/Mostafa-Ali-Darsh"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-hidden="true">
+				Mostafa
+			</a>
+		</div>
+		<!-- Main Content -->
 
-  <!-- Main Content -->
-  <div id="quote-box" >
-    <i id="quote" class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;&nbsp;
-    <span id="text"></span>
-    <span id="author"></span>
-    <button id="new-quote" onclick="location.href='#';">New quote
-    </button>
-    <a class="fa fa-twitter" id="tweet-quote" title="Tweet this quote!" href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22Whatever%20the%20mind%20of%20man%20can%20conceive%20and%20believe%2C%20it%20can%20achieve.%22%20Napoleon%20Hill" target="_blank" rel="noopener noreferrer" aria-hidden="true">
-    </a>
-    <a class="fa fa-tumblr" id="tumblr-quote" title="Post this quote on tumbler!" href="https://www.tumblr.com/login?redirect_to=https%3A%2F%2Fwww.tumblr.com%2Fwidgets%2Fshare%2Ftool%3Fposttype%3Dquote%26tags%3Dquotes%252Cfreecodecamp%26caption%3DVincent%2Bvan%2BGogh%26content%3DI%2Bwould%2Brather%2Bdie%2Bof%2Bpassion%2Bthan%2Bof%2Bboredom.%26canonicalUrl%3Dhttps%253A%252F%252Fwww.tumblr.com%252Fbuttons%26shareSource%3Dtumblr_share_button" target="_blank" rel="noopener noreferrer" aria-hidden="true">
-    </a>
-  </div>
-  <div id="pro">
-    by
-    <a id="mostafa" href="https://codepen.io/Mostafa-Ali-Darsh" target="_blank" rel="noopener noreferrer" aria-hidden="true">
-      Mostafa
-    </a>
-  </div>
-  <!-- Main Content -->
-
-  <!-- JS here -->
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
-</body>
+		<!-- JS here -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
 </html>
