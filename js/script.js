@@ -326,7 +326,7 @@ const generateQuote = () => {
 		},
 	];
 
-	var arrIdx = Math.floor(Math.random() * quotes.length);
+	let arrIdx = Math.floor(Math.random() * quotes.length);
 	document.getElementById('text').innerHTML = quotes[arrIdx].text;
 	document.getElementById('author').innerHTML = quotes[arrIdx].author;
 };
