@@ -36,27 +36,23 @@
 /* Main Contents */
 body {
 	height: 100vh;
-	width: 100vw;
-	padding-top: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 #author {
 	font-family: 'https://allfont.net/allfont.css?fonts=raleway-extralight';
 	text-align: right;
 	display: block;
-	transition: 2500ms;
 	margin-top: 15px;
 	margin-bottom: 25px;
 	font-weight: 100;
 }
 #text {
 	font-size: 200%;
-	transition: 2500ms;
-	line-height: 50%;
 }
 #quote-box {
-	position: relative;
-	left: 50%;
-	transform: translate(-50%);
 	border-radius: 0.7%;
 	width: 550px;
 	padding: 40px 40px 80px 40px;
