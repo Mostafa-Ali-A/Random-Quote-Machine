@@ -36,7 +36,7 @@
 /* Main Contents */
 body {
 	padding-top: 150px;
-	transition: 2500ms;
+	height: 100vh;
 }
 #author {
 	font-family: 'https://allfont.net/allfont.css?fonts=raleway-extralight';
