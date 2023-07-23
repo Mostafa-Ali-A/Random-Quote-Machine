@@ -8,29 +8,29 @@
 	#new-quote,
 	#tweet-quote,
 	#tumblr-quote {
-		background-color: black;
+		background-color: #000;
 	}
 	#new-quote,
 	#tweet-quote,
 	#tumblr-quote {
-		color: black;
+		color: #000;
 	}
 }
 
 @media (prefers-color-scheme: light) {
 	#quote-box {
-		background-color: white;
+		background-color: #fff;
 	}
 	body,
 	#new-quote,
 	#tweet-quote,
 	#tumblr-quote {
-		background-color: slategray;
+		background-color: #708090;
 	}
 	#new-quote,
 	#tweet-quote,
 	#tumblr-quote {
-		color: white;
+		color: #fff;
 	}
 }
 /* Main Contents */
@@ -40,6 +40,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	transition: 1000ms ease-in-out;
 }
 #author {
 	font-family: 'https://allfont.net/allfont.css?fonts=raleway-extralight';
@@ -48,9 +49,11 @@ body {
 	margin-top: 15px;
 	margin-bottom: 25px;
 	font-weight: 100;
+	transition: 1000ms ease-in-out;
 }
 #text {
 	font-size: 200%;
+	transition: color 1000ms ease-in-out;
 }
 #quote-box {
 	border-radius: 0.7%;
@@ -67,16 +70,17 @@ body {
 	font-size: 90%;
 	cursor: pointer;
 	float: right;
-	transition: background-color 2500ms;
+	transition: background-color 1000ms ease-in-out;
 }
 
 #quote {
 	font-size: 180%;
-	transition: 2500ms;
+	transition: 1000ms ease-in-out;
 }
 
 #tweet-quote,
 #tumblr-quote {
+	color: #000;
 	font-size: 18px;
 	float: left;
 	width: 40px;
@@ -85,7 +89,7 @@ body {
 	margin-right: 3px;
 	margin-left: 3px;
 	cursor: pointer;
-	transition: background-color 2500ms;
+	transition: background-color 1000ms ease-in-out;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 10%;
@@ -104,9 +108,9 @@ body {
 #pro {
 	text-align: center;
 	margin-top: 10px;
-	color: white;
+	color: #fff;
 }
 #mostafa {
 	text-decoration: none;
-	color: white;
+	color: #fff;
 }

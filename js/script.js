@@ -96,7 +96,7 @@ const generateColors = () => {
 		'#696969',
 		'#778899',
 		'#708090',
-		'#2F4F4F
+		'#2F4F4F',
 	];
 
 	const arrColor = Math.floor(Math.random() * colors.length);
