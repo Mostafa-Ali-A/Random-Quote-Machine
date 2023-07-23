@@ -35,8 +35,9 @@
 }
 /* Main Contents */
 body {
-	padding-top: 150px;
 	height: 100vh;
+	width: 100vw;
+	padding-top: 150px;
 }
 #author {
 	font-family: 'https://allfont.net/allfont.css?fonts=raleway-extralight';
