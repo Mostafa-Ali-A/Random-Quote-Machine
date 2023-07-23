@@ -6,7 +6,7 @@ tumbler = document.getElementById("tumblr-quote");
 quote = document.getElementById("quote");
 body = document.querySelector("body");
 
-function RBC (e) {
+const RBC (e) {
     button.style.backgroundColor =
     body.style.backgroundColor =
     text.style.color =
@@ -100,7 +100,7 @@ const generateColors = () => {
 		'#000000',
 	];
 
-	let arrColor = Math.floor(Math.random() * colors.length);
+	const arrColor = Math.floor(Math.random() * colors.length);
 	document.getElementById('new-quote').style.backgroundColor = colors[arrColor];
 	document.getElementById('text').style.color = colors[arrColor];
 	document.getElementById('author').style.color = colors[arrColor];
@@ -326,7 +326,7 @@ const generateQuote = () => {
 		},
 	];
 
-	let arrIdx = Math.floor(Math.random() * quotes.length);
+	const arrIdx = Math.floor(Math.random() * quotes.length);
 	document.getElementById('text').innerHTML = quotes[arrIdx].text;
 	document.getElementById('author').innerHTML = quotes[arrIdx].author;
 };
