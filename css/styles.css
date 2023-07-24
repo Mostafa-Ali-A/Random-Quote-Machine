@@ -4,7 +4,7 @@
 /* dark & light contents */
 @media (prefers-color-scheme: dark) {
 	body,
-	#quote-box,
+	#box,
 	#new-quote,
 	#tweet-quote,
 	#tumblr-quote {
@@ -18,7 +18,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-	#quote-box {
+	#box {
 		background-color: #fff;
 	}
 	body,
@@ -35,6 +35,7 @@
 }
 /* Main Contents */
 body {
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -54,10 +55,14 @@ body {
 	font-size: 200%;
 	transition: color 1000ms ease-in-out;
 }
-#quote-box {
+#box {
 	border-radius: 0.7%;
-	width: 450px;
+	width: 550px;
 	padding: 40px 40px 80px 40px;
+}
+#quote-box {
+	width: 450px;
+
 	text-align: center;
 }
 #new-quote {
