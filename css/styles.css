@@ -55,14 +55,11 @@ body {
 	font-size: 200%;
 	transition: color 1000ms ease-in-out;
 }
-#box {
+#quote-box {
+	width: 450px;
 	border-radius: 0.7%;
 	width: 550px;
 	padding: 40px 40px 80px 40px;
-}
-#quote-box {
-	width: 450px;
-
 	text-align: center;
 }
 #new-quote {
