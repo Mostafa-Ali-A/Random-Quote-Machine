@@ -6,30 +6,32 @@
 	body,
 	#quote-box,
 	#new-quote,
+	#tweet,
+	#tumblr,
 	#tweet-quote,
 	#tumblr-quote {
 		background-color: #000;
 	}
 	#new-quote,
-	#tweet-quote,
-	#tumblr-quote {
+	#tweet,
+	#tumblr {
 		color: #000;
 	}
 }
 
 @media (prefers-color-scheme: light) {
-	#quote-box {
+	#quote-box,
+	#new-quote,
+	#tweet,
+	#tumblr {
 		background-color: #fff;
 	}
-	body,
-	#new-quote,
-	#tweet-quote,
-	#tumblr-quote {
+	body {
 		background-color: #708090;
 	}
 	#new-quote,
-	#tweet-quote,
-	#tumblr-quote {
+	#tweet,
+	#tumblr {
 		color: #fff;
 	}
 }
@@ -40,7 +42,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	transition: 1000ms ease-in-out;
+	transition: background-color 500ms ease-in-out;
 }
 #author {
 	font-family: 'https://allfont.net/allfont.css?fonts=raleway-extralight';
@@ -49,11 +51,9 @@ body {
 	margin-top: 15px;
 	margin-bottom: 25px;
 	font-weight: 100;
-	transition: 1000ms ease-in-out;
 }
 #text {
 	font-size: 200%;
-	transition: color 1000ms ease-in-out;
 }
 #quote-box {
 	width: 450px;
@@ -64,34 +64,44 @@ body {
 #new-quote {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	border: none;
-	outline: none;
 	border-radius: 5%;
 	padding: 10px 15px 7px 15px;
-	font-size: 90%;
-	cursor: pointer;
+	font-size: 80%;
+	font-weight: bold;
 	float: right;
-	transition: background-color 1000ms ease-in-out;
-}
-
-#quote {
-	font-size: 180%;
-	transition: 1000ms ease-in-out;
+	transition: background-color 500ms ease-in-out;
 }
 
 #tweet-quote,
 #tumblr-quote {
-	font-size: 18px;
+	border: none;
 	float: left;
-	width: 40px;
-	height: 40px;
-	padding: 12px;
-	margin-right: 3px;
-	margin-left: 3px;
-	cursor: pointer;
-	transition: background-color 1000ms ease-in-out;
-	text-align: center;
-	text-decoration: none;
+	width: 36.19px;
+	height: 36.19px;
+	transition: background-color 500ms ease-in-out;
 	border-radius: 10%;
+}
+
+#tweet-quote {
+	margin-right: 10px;
+}
+
+#tweet-quote a,
+#tumblr-quote a {
+	display: block;
+	margin-top: -1px;
+	margin-left: -6px;
+	padding-right: 1px;
+	padding-top: 4px;
+	width: 36.19px;
+	height: 36.19px;
+}
+
+#tweet,
+#tumblr {
+	width: 18px;
+	height: 18px;
+	transition: background-color 500ms ease-in-out;
 }
 
 #tweet-quote:hover {
@@ -116,5 +126,5 @@ body {
 	color: #fff;
 }
 #mostafa:hover {
-	color: blue;
+	color: #191970;
 }
