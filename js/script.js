@@ -1950,7 +1950,7 @@ const generateQuote = () => {
 	document.getElementById('text').innerHTML = quotes[arrIdx].quote;
 	document.getElementById('author').innerHTML = quotes[arrIdx].author;
 
-	document.getElementById('text').style.opacity = 0;
+	/*document.getElementById('text').style.opacity = 0;
 	document.getElementById('author').style.opacity = 0;
 
 	const fadeText = document.getElementById('text');
@@ -1963,7 +1963,19 @@ const generateQuote = () => {
 		} else {
 			clearInterval(intervalID);
 		}
-	}, 50);
+	}, 50);*/
+	document.getElementById('text').classList.remove('animated');
+	document.getElementById('author').classList.remove('animated');
+	const timeoutID = setTimeout(() => {
+		if (timeoutID) {
+			/*document.getElementById('text').classList.add('animated');
+	document.getElementById('author').classList.add('animated');*/
+			document.getElementById('text').classList.toggle('animated');
+			document.getElementById('author').classList.toggle('animated');
+		} else {
+			clearTimeout(timeoutID);
+		}
+	});
 };
 
 window.onload = () => {

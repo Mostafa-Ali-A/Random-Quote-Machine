@@ -55,6 +55,23 @@ body {
 #text {
 	font-size: 200%;
 }
+.animated {
+	animation-play-state: paused;
+	animation: fade-in 1s ease-in-out alternate;
+	animation-play-state: running;
+}
+@keyframes fade-in {
+	/*0%*/
+	from {
+		opacity: 0;
+		/*transform: rotateY('30px');*/
+	}
+	/*100%*/
+	to {
+		opacity: 1;
+		/*transform: rotateX('0px');*/
+	}
+}
 #quote-box {
 	width: 450px;
 	border-radius: 0.7%;
