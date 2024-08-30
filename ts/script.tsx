@@ -1,3 +1,4 @@
+// @ts-check
 /*button = document.getElementById("new-quote");
 text = document.getElementById("text");
 author = document.getElementById("author");
@@ -95,14 +96,26 @@ const generateColors = () => {
 	];
 
 	const arrColor = Math.floor(Math.random() * colors.length);
-	document.getElementById('new-quote').style.backgroundColor = colors[arrColor];
-	document.getElementById('text').style.color = colors[arrColor];
-	document.getElementById('author').style.color = colors[arrColor];
-	document.getElementById('tweet-quote').style.backgroundColor = colors[arrColor];
-	document.getElementById('tumblr-quote').style.backgroundColor = colors[arrColor];
-	document.getElementById('tweet').style.backgroundColor = colors[arrColor];
-	document.getElementById('tumblr').style.backgroundColor = colors[arrColor];
-	document.querySelector('body').style.backgroundColor = colors[arrColor];
+
+	const newQuote = document.getElementById('new-quote');
+	const text = document.getElementById('text');
+	const author = document.getElementById('author');
+	const tweetQuote = document.getElementById('tweet-quote');
+	const tumblrQuote = document.getElementById('tumblr-quote');
+	const tweet = document.getElementById('tweet');
+	const tumblr = document.getElementById('tumblr');
+	const body = document.querySelector('body');
+
+	if (newQuote && text && author && tweetQuote && tumblrQuote && tweet && tumblr && body) {
+		newQuote.style.backgroundColor = colors[arrColor];
+		text.style.color = colors[arrColor];
+		author.style.color = colors[arrColor];
+		tweetQuote.style.backgroundColor = colors[arrColor];
+		tumblrQuote.style.backgroundColor = colors[arrColor];
+		tweet.style.backgroundColor = colors[arrColor];
+		tumblr.style.backgroundColor = colors[arrColor];
+		body.style.backgroundColor = colors[arrColor];
+	}
 };
 
 const generateQuote = () => {
@@ -1947,40 +1960,50 @@ const generateQuote = () => {
 	];
 
 	const arrIdx = Math.floor(Math.random() * quotes.length);
-	document.getElementById('text').innerHTML = quotes[arrIdx].quote;
-	document.getElementById('author').innerHTML = quotes[arrIdx].author;
 
-	/*document.getElementById('text').style.opacity = 0;
-	document.getElementById('author').style.opacity = 0;
+	const text = document.getElementById('text');
+	const author = document.getElementById('author');
 
-	const fadeText = document.getElementById('text');
-	const fadeAuthor = document.getElementById('author');
-	let opacity = 0;
-	const intervalID = setInterval(() => {
-		if (opacity < 0.9) {
-			opacity += 0.1;
-			fadeText.style.opacity = fadeAuthor.style.opacity = opacity;
-		} else {
-			clearInterval(intervalID);
-		}
-	}, 50);*/
-	document.getElementById('text').classList.remove('animated');
-	document.getElementById('author').classList.remove('animated');
-	const timeoutID = setTimeout(() => {
-		if (timeoutID) {
-			/*document.getElementById('text').classList.add('animated');
-	document.getElementById('author').classList.add('animated');*/
-			document.getElementById('text').classList.toggle('animated');
-			document.getElementById('author').classList.toggle('animated');
-		} else {
-			clearTimeout(timeoutID);
-		}
-	});
+	if (text && author) {
+		text.innerHTML = quotes[arrIdx].quote;
+		author.innerHTML = quotes[arrIdx].author;
+
+		/*text.style.opacity = (0).toString();
+		author.style.opacity = (0).toString();
+
+		const fadeText = document.getElementById('text');
+		const fadeAuthor = document.getElementById('author');
+		let opacity = 0;
+		const intervalID = setInterval(() => {
+			if (fadeText && fadeAuthor && opacity < 0.9) {
+				opacity += 0.1;
+				fadeText.style.opacity = fadeAuthor.style.opacity = opacity.toString();
+			} else {
+				clearInterval(intervalID);
+			}
+		}, 75);*/
+
+		text.classList.remove('animated');
+		author.classList.remove('animated');
+		const timeoutID = setTimeout(() => {
+			if (timeoutID) {
+				/*text.classList.add('animated');
+	author.classList.add('animated');*/
+				text.classList.toggle('animated');
+				author.classList.toggle('animated');
+			} else {
+				clearTimeout(timeoutID);
+			}
+		});
+	}
 };
 
 window.onload = () => {
 	generateQuote();
 	generateColors();
-	document.getElementById('new-quote').addEventListener('click', generateQuote);
-	document.getElementById('new-quote').addEventListener('click', generateColors);
+	const newQuote = document.getElementById('new-quote');
+	if (newQuote) {
+		newQuote.addEventListener('click', generateQuote);
+		newQuote.addEventListener('click', generateColors);
+	}
 };
