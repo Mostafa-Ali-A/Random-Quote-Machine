@@ -1,7 +1,9 @@
 * {
 	font-family: 'https://allfont.net/allfont.css?fonts=raleway-medium';
 }
+
 /* dark & light contents */
+
 @media (prefers-color-scheme: dark) {
 	body,
 	#quote-box,
@@ -35,7 +37,9 @@
 		color: #fff;
 	}
 }
+
 /* Main Contents */
+
 body {
 	height: 100vh;
 	display: flex;
