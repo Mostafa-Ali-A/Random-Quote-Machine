@@ -1,26 +1,28 @@
-// @ts-check
-/*button = document.getElementById("new-quote");
-text = document.getElementById("text");
-author = document.getElementById("author");
-twitter = document.getElementById("tweet-quote");
-tumbler = document.getElementById("tumblr-quote");
-quote = document.getElementById("quote");
-body = document.querySelector("body");
+/*const RBC = () => {
+	const newQuote = document.getElementById('new-quote');
+	const text = document.getElementById('text');
+	const author = document.getElementById('author');
+	const tweetQuote = document.getElementById('tweet-quote');
+	const tumblrQuote = document.getElementById('tumblr-quote');
+	const tweet = document.getElementById('tweet');
+	const tumblr = document.getElementById('tumblr');
+	const body = document.querySelector('body');
 
-const RBC (e) {
-	button.style.backgroundColor =
-	body.style.backgroundColor =
-	text.style.color =
-	twitter.style.backgroundColor =
-	tumbler.style.backgroundColor =
-	author.style.color =
-	quote.style.color ="#"+Math.floor(Math.random()*16777215).toString(16);
-}
-button.addEventListener("click", RBC);
-window.onload = RBC();*/
+	if (newQuote && text && author && tweetQuote && tumblrQuote && tweet && tumblr && body) {
+		newQuote.style.backgroundColor =
+			text.style.color =
+			author.style.color =
+			tweetQuote.style.backgroundColor =
+			tumblrQuote.style.backgroundColor =
+			tweet.style.backgroundColor =
+			tumblr.style.backgroundColor =
+			body.style.backgroundColor =
+				'#' + Math.floor(Math.random() * 16777215).toString(16);
+	}
+};*/
 
 const generateColors = () => {
-	const colors = [
+	const Colors = [
 		'#CD5C5C',
 		'#F08080',
 		'#FA8072',
@@ -95,7 +97,7 @@ const generateColors = () => {
 		'#2F4F4F',
 	];
 
-	const arrColor = Math.floor(Math.random() * colors.length);
+	const arrColor = Math.floor(Math.random() * Colors.length);
 
 	const newQuote = document.getElementById('new-quote');
 	const text = document.getElementById('text');
@@ -107,19 +109,19 @@ const generateColors = () => {
 	const body = document.querySelector('body');
 
 	if (newQuote && text && author && tweetQuote && tumblrQuote && tweet && tumblr && body) {
-		newQuote.style.backgroundColor = colors[arrColor];
-		text.style.color = colors[arrColor];
-		author.style.color = colors[arrColor];
-		tweetQuote.style.backgroundColor = colors[arrColor];
-		tumblrQuote.style.backgroundColor = colors[arrColor];
-		tweet.style.backgroundColor = colors[arrColor];
-		tumblr.style.backgroundColor = colors[arrColor];
-		body.style.backgroundColor = colors[arrColor];
+		newQuote.style.backgroundColor = Colors[arrColor];
+		text.style.color = Colors[arrColor];
+		author.style.color = Colors[arrColor];
+		tweetQuote.style.backgroundColor = Colors[arrColor];
+		tumblrQuote.style.backgroundColor = Colors[arrColor];
+		tweet.style.backgroundColor = Colors[arrColor];
+		tumblr.style.backgroundColor = Colors[arrColor];
+		body.style.backgroundColor = Colors[arrColor];
 	}
 };
 
 const generateQuote = () => {
-	const quotes = [
+	const Quotes = [
 		{
 			quote: `<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -1959,14 +1961,14 @@ const generateQuote = () => {
 		},
 	];
 
-	const arrIdx = Math.floor(Math.random() * quotes.length);
+	const arrIdx = Math.floor(Math.random() * Quotes.length);
 
 	const text = document.getElementById('text');
 	const author = document.getElementById('author');
 
 	if (text && author) {
-		text.innerHTML = quotes[arrIdx].quote;
-		author.innerHTML = quotes[arrIdx].author;
+		text.innerHTML = Quotes[arrIdx].quote;
+		author.innerHTML = Quotes[arrIdx].author;
 
 		/*text.style.opacity = (0).toString();
 		author.style.opacity = (0).toString();
@@ -2001,9 +2003,11 @@ const generateQuote = () => {
 window.onload = () => {
 	generateQuote();
 	generateColors();
+	//RBC();
 	const newQuote = document.getElementById('new-quote');
 	if (newQuote) {
 		newQuote.addEventListener('click', generateQuote);
 		newQuote.addEventListener('click', generateColors);
+		//newQuote.addEventListener('click', RBC);
 	}
 };
