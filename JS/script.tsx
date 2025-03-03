@@ -1987,6 +1987,18 @@ const generateQuote = () => {
 
 		text.classList.remove('animated');
 		author.classList.remove('animated');
+		const newQuote = document.getElementById('new-quote');
+		if (newQuote) {
+			newQuote.style.scale = '0.95';
+			const timer = setTimeout(() => {
+				if (timer) {
+					newQuote.style.scale = '';
+				} else {
+					clearTimeout(timer);
+				}
+			}, 150);
+		}
+
 		const timeoutID = setTimeout(() => {
 			if (timeoutID) {
 				/*text.classList.add('animated');
@@ -2000,14 +2012,46 @@ const generateQuote = () => {
 	}
 };
 
+const tweetAnime = () => {
+	const tweet = document.getElementById('tweet-quote');
+	if (tweet) {
+		tweet.style.scale = '0.95';
+		const timer = setTimeout(() => {
+			if (timer) {
+				tweet.style.scale = '';
+			} else {
+				clearTimeout(timer);
+			}
+		}, 150);
+	}
+};
+
+const tumblrAnime = () => {
+	const tumblr = document.getElementById('tumblr-quote');
+	if (tumblr) {
+		tumblr.style.scale = '0.95';
+		const timer = setTimeout(() => {
+			if (timer) {
+				tumblr.style.scale = '';
+			} else {
+				clearTimeout(timer);
+			}
+		}, 150);
+	}
+};
+
 window.onload = () => {
 	generateQuote();
 	generateColors();
 	//RBC();
 	const newQuote = document.getElementById('new-quote');
-	if (newQuote) {
+	const tweet = document.getElementById('tweet-quote');
+	const tumblr = document.getElementById('tumblr-quote');
+	if (newQuote && tweet && tumblr) {
 		newQuote.addEventListener('click', generateQuote);
 		newQuote.addEventListener('click', generateColors);
+		tweet.addEventListener('click', tweetAnime);
+		tumblr.addEventListener('click', tumblrAnime);
 		//newQuote.addEventListener('click', RBC);
 	}
 };

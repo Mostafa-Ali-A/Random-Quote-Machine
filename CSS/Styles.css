@@ -90,7 +90,7 @@ body {
 	font-size: 80%;
 	font-weight: bold;
 	float: right;
-	transition: background-color 500ms ease-in-out;
+	transition: background-color 500ms ease-in-out, scale 150ms ease-in-out;
 }
 
 #tweet-quote,
@@ -99,7 +99,7 @@ body {
 	float: left;
 	width: 36.19px;
 	height: 36.19px;
-	transition: background-color 500ms ease-in-out;
+	transition: background-color 500ms ease-in-out, scale 150ms ease-in-out;
 	border-radius: 10%;
 }
 
