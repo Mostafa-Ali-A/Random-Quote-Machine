@@ -1,13 +1,13 @@
 <h2 align='center'>PageSpeed Insights Review</h2>
-<img alt='https://github.com/Mostafa-Ali-A/Random-Quote-Machine/assets/72570901/b7eace3c-73f7-4c73-9099-fe81cadd9280'></img>
+<img alt='Random Quote Machine' src='https://github.com/dev-mostafa-ali/random-quote-machine/assets/72570901/b7eace3c-73f7-4c73-9099-fe81cadd9280'></img>
 <h2>
-  <p align='center'>PageSpeed Insights
-<a href='https://pagespeed.web.dev/'>Live Link!</a>
+  <p align='center'>PageSpeed Insights 
+<a href='https://pagespeed.web.dev/'>Link!</a>
     </p>
 </h2>
 <h2>
-  <p align='center'>Random Quote Machine
-<a href='https://mostafa-ali-a.github.io/Random-Quote-Machine/'>Live URL!</a>
+  <p align='center'>Random Quote Machine 
+<a href='https://dev-mostafa-ali.github.io/random-quote-machine/'>Live URL!</a>
     </p>
 </h2>
 <h1>
@@ -28,8 +28,11 @@
 🔝 Technologies
   </h1>
   <ul>
+  <li>
+  <h3>Typescript</h3>
+   </li>
    <li>
-  <h3>JavaScript</h3>
+  <h3>Javascript</h3>
    </li>
    <li>
   <h3>Bootstrap</h3>
